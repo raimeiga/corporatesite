@@ -1,0 +1,215 @@
+/*
+ Theme Name: corporate_site
+ Theme URI: 
+ Description: corporate_site模写
+ Version: 1.0.0
+ Author: SAMURAI ENGINEER
+ Author URI: 
+ */
+
+html {
+    font-family: Meiryo,Regular;    
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    height: 75px;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+ 
+ #navi {
+   height: 100px;   
+   position: relative;
+ }
+
+#navi > div > a {    
+    text-decoration: none;
+}
+
+#wed {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding-top: 7px;
+    padding-left: 75px; 
+    font-size: 36px;   
+    letter-spacing: 0.25em;
+    color: black;
+ }
+
+ #nav_to_sections {
+    position: absolute;
+    top: 26px;
+    left: 225px;
+    width: 300px;    
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: Meiryo,Regular;    
+ }
+
+ #nav_to_contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 160px;
+    height: 75px;
+    display: flex;
+    text-align: center;    
+ }
+
+ #nav_to_contact > a {    
+    color: #fff;
+    width: 160px;
+    height: 75px;
+    margin: 30px auto;
+    font-size: 12px;   
+ }
+
+#main_visual {
+    /* ↓ 画像をトリミングするプロパティ */
+    object-fit: cover;
+    width: 100%;
+    height: 530px;  /* 530pxに縮めたってこと*/
+    margin-bottom: 108px;
+} 
+
+#news {
+    width: 100%;
+    height: 360px;
+    
+}
+
+#section_title {
+    display: block;    
+    font-size: 36px;   
+    letter-spacing: 0.25em;
+    color: black;
+    margin-left: 140px;
+    margin-bottom: 0;
+ }
+
+ #section_title_small {
+    display: block;
+    font-size: 14px;
+    font-family: Meiryo,Regular;    
+    font-weight: bolder;
+    color: black;
+    padding: 0;
+    margin-left: 140px;
+    margin-bottom: 90px;   
+ }
+ 
+ #section_title_small > p {
+    margin: 12px 0 0 0;     
+}
+
+.border {
+    padding-bottom: 35px;
+    border-bottom: solid 2px black;  
+  }
+
+  /* .y-m-d-label {
+    padding-bottom: 14px;
+  } */
+
+  #news_container {
+    width:1000px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 108px;
+  }
+
+  .individual_news {
+    width: 260px;
+    text-align: left;
+    border-left: solid 3px black;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  #individual_news_01 {
+    border-left: none;
+  }
+
+  .y-m-d {
+    width: 260px;
+    padding: 0;
+    margin: 0;
+  }
+
+.y-m-d  > p  {
+    display:inline-block;  
+    margin: 0 22px 18px 0;    
+    font-size: 14px;   
+    letter-spacing: 0px;
+}
+
+.label {
+    display:inline-block;  
+    padding: 3px 6px;
+    background-color: black;
+    color: #fff; 
+    font-size: 12px;
+}
+
+.individual_news > p {
+    width:260px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;   
+}
+
+#ABOUT {
+    background-color: blue;
+    position: relative;
+    width: 100%;
+    height: 670px;
+}
+
+#visual_ABOUT {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:57%;
+  height: 400px;
+}
+
+#section_title_wrapper {
+ width: 430px;
+ position: absolute;
+ top: 180px;
+ right: 20px;
+}
+
+#section_title_ABOUT {
+    display: block;    
+    font-size: 36px;   
+    letter-spacing: 0.25em;
+    color: black;
+    
+ }
+
+#section_title_small_ABOUT {
+    display: block;
+    font-size: 14px;
+    font-family: Meiryo,Regular;    
+    font-weight: bolder;
+    color: black;
+    padding: 0;    
+    margin-bottom: 90px;   
+}
+
+ #section_title_small_ABOUT > p {
+    
+    margin: 12px 0 0 0;     
+}
+
+#section_title_small_ABOUT_description {
+    font-size: 14px;
+}
