@@ -225,10 +225,7 @@ body {
   margin-bottom: 0;
 }
 
-#introduction_wrapper {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 #introduction_left {
  display: inline-block;
