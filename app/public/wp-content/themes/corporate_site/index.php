@@ -23,8 +23,7 @@
                 <a href="">BUSINESS</a>
                 <a href="">COMPANY</a>
             </div>
-            <div id="nav_to_contact">
-    
+            <div id="nav_to_contact">    
                 <a id="contact" href="">お問い合わせ</a>
             </div>
         </div>     
@@ -36,10 +35,12 @@
   </section>
 
   <section id="news">    
-    <div id="section_title">NEWS</div>
-    <div id="section_title_small">    
-       <p><span class="border">ニュー</span>ス</p>        
-    </div>     
+    <div class="section_title_wrapper"  id="section_title_wrapper_news" >
+        <div class="section_title">NEWS</div>
+        <div class="section_title_small">    
+            <p><span class="border">ニュー</span>ス</p>        
+        </div>     
+    </div>
     <div id="news_container">
         <div class="individual_news" id="individual_news_01">
             <div class="y-m-d">
@@ -65,24 +66,66 @@
             <p>テキストテキストテキストテキスト</p>
         </div>
     </div>
-    
+    </section>
+
     <section id="ABOUT">
-       <img id="visual_ABOUT"  src="<?php echo get_template_directory_uri();?>/images/about.jpg">
-       <div id="section_title_wrapper">
-          <div id="section_title_ABOUT">ABOUT</div>
-          <div id="section_title_small_ABOUT">    
+       <img id="visual_about"  src="<?php echo get_template_directory_uri();?>/images/about.jpg">
+       <div class="section_title_wrapper" id="section_title_wrapper_about">
+          <div class="section_title">ABOUT</div>
+          <div class="section_title_small">    
               <p><span class="border">私たち</span>について</p> 
           </div>
-          <div id="section_title_small_ABOUT_description">
+          <div id="description_about">
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </div> 
        </div>       
      </section>
+
+     <section  id="BUSINESS">
+        <div class="section_title_wrapper" id="section_title_wrapper_business">
+            <div class="section_title">BUSINESS</div>
+            <div class="section_title_small">    
+                <p><span class="border">事業内</span>容</p>        
+            </div> 
+        </div>    
+        
+       <div id="introduction_wrapper">
+            <div id="introduction_left">
+                <div class="business_content">
+                    <p>－</p>
+                    <p>Web制作・マーケティング</p>
+                    <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business1.jpg">
+                </div>
+                <div class="business_content">
+                    <p>－</p>
+                    <p>インターネットメディア事業</p>
+                    <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business2.jpg">
+                </div>
+            </div>
+
+            <div id="introduction_right">
+                <div class="business_content">
+                    <p>－</p>
+                    <p>プロモーション企画・制作</p>
+                    <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business3.jpg">
+                </div>
+                <div class="business_content">
+                    <p>－</p>
+                    <p>ソーシャル企画・運営</p>
+                    <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business4.jpg">
+                </div>
+            </div>
+        </div>
+        
+
+     </section>
+
+
      
-    </div>
-  </section>
+    
+
 
 
 
