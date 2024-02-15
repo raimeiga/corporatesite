@@ -7,6 +7,7 @@
  Author URI: 
  */
 
+
 html {
     font-family: Meiryo,Regular;    
     padding: 0;
@@ -14,8 +15,11 @@ html {
 }
 
 body {
- padding: 0;
- margin: 0;
+  background-color: #f0f0f0;
+    /* max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto; */
+    width: 100%;
 }
 
 
@@ -90,7 +94,7 @@ body {
     margin-bottom: 108px;
 } 
 
-#news {
+#NEWS {
     width: 100%;
     height: 360px;    
 }
@@ -187,7 +191,7 @@ body {
 
 /* ここからABOUT */
 #ABOUT {
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
     width: 100%;
     height: 670px;
@@ -214,9 +218,12 @@ body {
 
 /* ここからBUSINESS */
 #BUSINESS {
+  /* background-color: burlywood; */
   width: 100%;
-  height: 650px;
-  position: relative;
+  height: 799px;
+  margin-bottom: 120px;
+  
+  /* position: relative; */
 }
 
 #section_title_wrapper_business {
@@ -225,23 +232,36 @@ body {
   margin-bottom: 0;
 }
 
-
+#introduction_wrapper {
+ /* background-color: brown; */
+ width: 58%;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+ justify-content: space-between;
+}
 
 #introduction_left {
- display: inline-block;
- position: absolute;
+  width: 46%;
+  margin-top: 100px;
+ /* display: inline-block; */
+ /* position: absolute;
  top: 260px;
- left: 210px;
+ left: 210px; */
+ 
 }
 
 #introduction_right {
-  display: inline-block;
-  position: absolute;
+  width: 46%;
+  /* display: inline-block; */
+  /* position: absolute;
   top: 160px;
-  right: 210px;
+  right: 210px; */
+  
  }
 
 .business_content{
+  width: 100%;
  margin-bottom: 50px;
 }
 
@@ -252,7 +272,60 @@ body {
 }
 
 .visual_01 {
-  width: 370px;
+  width: 100%;
   display: block;
   margin-top: 10px;
+}
+
+
+#COMPANY {
+  /* background-color: yellow; */
+  height: 750px;
+  position: relative;
+}
+
+#COMPANY > div {
+  width: 48%;
+  background-color: #fff;
+  position: absolute;
+   top:0px;
+   left: 140px;  
+ margin-bottom: 
+ 
+}
+
+#COMPANY > img{ 
+  position: absolute;
+   top:140px;
+   right: 5%;  
+  width: 57%;   
+  object-fit: cover; /*画像を切る（トリミング） */
+  width: 570px;      /* 今回は両端を均等に切り、530pxにした*/
+  height: 400px;  
+  
+}
+
+#section_title_wrapper_company {
+  width: 430px;
+  
+  padding: 120px 0  0 60px;
+}
+
+#company_description {
+ width: 100%;
+ text-align: left;
+ font-size: 14px;
+ padding-left: 60px;
+ padding-bottom: 100px;
+}
+
+.item_first {
+  width: 13%;
+  font-weight: normal;
+  padding: 0 0 10px 0;  
+}
+
+.item_second {
+  width: 85%; 
+  padding: 0 0 10px 0;  
 }

@@ -34,7 +34,7 @@
   <img id="main_visual"  src="<?php echo get_template_directory_uri();?>/images/mainvisual.jpg" alt="オフィス全体">
   </section>
 
-  <section id="news">    
+  <section id="NEWS">    
     <div class="section_title_wrapper"  id="section_title_wrapper_news" >
         <div class="section_title">NEWS</div>
         <div class="section_title_small">    
@@ -118,9 +118,62 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="COMPANY">
+        <div>
+            <div class="section_title_wrapper" id="section_title_wrapper_company">
+                <div class="section_title">COMPANY</div>
+                <div class="section_title_small">    
+                    <p><span class="border">会社情</span>報</p>        
+                </div> 
+            </div>    
+       
+            <table id="company_description">
+                <tr>
+                    <th class="item_first">会社名</th>
+                    <td class="item_second">ウェブエンターテイメントデザイン株式会社</td>
+                </tr>
+
+                <tr>
+                    <th class="item_first">所在地</th>
+                    <td class="item_second">東京都渋谷区桜丘町99-9 West Building 3F</td>
+                </tr>
+                <tr>
+                    <th class="item_first">代表</th>
+                    <td class="item_second">ＸＸＸＸＸＸ</td>
+                </tr>
+                <tr>
+                    <th class="item_first">設立</th>
+                    <td class="item_second">2021年1月1日</td>
+                </tr>
+                <tr>
+                    <th class="item_first">資本金</th>
+                    <td class="item_second">3,000,000円</td>
+                </tr>
+                <tr>
+                    <th class="item_first">事業内容</th>
+                    <td class="item_second">Web制作・マーケティング</td>
+                </tr>
+                <tr>
+                    <th class="item_first"></th>
+                    <td class="item_second">インターネットメディア事業</td>
+                </tr>
+                <tr>
+                    <th class="item_first"></th>
+                    <td class="item_second">プロモーション企画・制作</td>
+                </tr>
+                <tr>
+                    <th class="item_first"></th>
+                    <td class="item_second">ソーシャル企画・運営</td>
+                </tr>
+            </table>            
+        </div>
+        <img src="<?php echo get_template_directory_uri();?>/images/company.jpg" alt="向かい合ってすわる女性2人">
+    </section>
         
 
-     </section>
+     
 
 
      
