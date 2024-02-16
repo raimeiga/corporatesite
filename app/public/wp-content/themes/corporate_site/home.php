@@ -1,39 +1,5 @@
-<!-- header.php ここから -->
-<!DOCTYPE html>
 
-<html>
-   <head>
-        <title>corporate_site</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="corporate_siteの説明" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
-   </head>
-
-  <body>
-        <!-- ヘッダーここから -->
-        <header id="header">
-            <div id="navi">          
-                <div id="wed">    
-                    <a href="">WED</a>
-                </div>
-                <div id="nav_to_sections">
-                    <a href="#">NEWS</a>
-                    <a href="index.php#ABOUT">ABOUT</a>
-                    <a href="index.php#BUSINESS">BUSINESS</a>
-                    <a href="index.php#COMPANY">COMPANY</a>
-                </div>
-                <div id="nav_to_contact">    
-                    <a id="contact" href="">お問い合わせ</a>
-                </div>
-            </div>     
-        </header>
-        <!-- ヘッダーここまで -->
-<!-- header.php ここまで -->
-    
-
-
+<?php get_header();?>  <!-- ← header.phpからヘッダーのコードを呼び出す -->
     <main>
         <section id="visual">
             <img id="main_visual"  src="<?php echo get_template_directory_uri();?>/images/mainvisual.jpg" alt="オフィス全体">
@@ -43,7 +9,7 @@
             <div class="section_title_wrapper"  id="section_title_wrapper_news" >
                 <div class="section_title">NEWS</div>
                 <div class="section_title_small">    
-                    <p><span class="border">ニュー</span>ス</p>        
+                    <p><span class="border">子ュー</span>ス</p>        
                 </div>     
             </div>
             <div id="news_container">
@@ -80,7 +46,7 @@
             <div class="section_title_wrapper" id="section_title_wrapper_about">
                 <div class="section_title">ABOUT</div>
                 <div class="section_title_small">    
-                    <p><span class="border">私たち</span>について</p> 
+                    <p><span class="border">俺たち</span>について</p> 
                 </div>
                 <div id="description_about">
                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -94,7 +60,7 @@
                 <div class="section_title_wrapper" id="section_title_wrapper_business">
                     <div class="section_title">BUSINESS</div>
                     <div class="section_title_small">    
-                        <p><span class="border">事業内</span>容</p>        
+                        <p><span class="border">詐欺内</span>容</p>        
                     </div> 
                 </div>    
                 
@@ -132,7 +98,7 @@
                     <div class="section_title_wrapper" id="section_title_wrapper_company">
                         <div class="section_title">COMPANY</div>
                         <div class="section_title_small">    
-                            <p><span class="border">会社情</span>報</p>        
+                            <p><span class="border">家庭情</span>報</p>        
                         </div> 
                     </div>           
                     <table id="company_description">
@@ -180,15 +146,6 @@
                 </div>    
             </section>
     </main>
+    <?php get_footer(); ?>    <!-- ← footer.phpからヘッダーのコードを呼び出す -->
 
-    <!-- footer.php ここから -->
-    <footer>
-        <div>
-            <img id="footer_logo" src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt="WEDのロゴ">
-            <p id="footer_address" >Web Entertainment Design Inc.<br>West Building 3F<br>9-99 Sakuragaokacho Shibuya-ku<br>Tokyo, Japan 150-0031<br>T/99-9999-9999</p>
-        </div>
-        <p id="copyright">&copy;Web Entertainment Design Inc.</p>
-    </footer>
-  </body>
-</html>
-<!-- footer.php ここまで -->
+    
