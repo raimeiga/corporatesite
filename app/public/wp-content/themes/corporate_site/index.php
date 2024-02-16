@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="corporate_siteの説明" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
    </head>
 
@@ -21,9 +20,9 @@
                 </div>
                 <div id="nav_to_sections">
                     <a href="">NEWS</a>
-                    <a href="">ABOUT</a>
-                    <a href="">BUSINESS</a>
-                    <a href="">COMPANY</a>
+                    <a href="index.php#ABOUT">ABOUT</a>
+                    <a href="index.php#BUSINESS">BUSINESS</a>
+                    <a href="index.php#COMPANY">COMPANY</a>
                 </div>
                 <div id="nav_to_contact">    
                     <a id="contact" href="">お問い合わせ</a>
@@ -50,7 +49,7 @@
             <div id="news_container">
                 <div class="individual_news" id="individual_news_01">
                     <div class="y-m-d">
-                        <p>2021.01.01</p>
+                        <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">NEWS</a>
                     </div>
                     <p>テキストテキストテキストテキスト</p>
@@ -58,7 +57,7 @@
 
                 <div class="individual_news">
                     <div class="y-m-d">
-                        <p>2021.01.01</p>
+                        <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">PRESS</a>
                     </div>
                     <p>テキストテキストテキストテキスト</p>
@@ -66,7 +65,7 @@
                 
                 <div class="individual_news">
                     <div class="y-m-d">
-                        <p>2021.01.01</p>
+                        <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">NEWS</a>
                     </div>
                     <p>テキストテキストテキストテキスト</p>
