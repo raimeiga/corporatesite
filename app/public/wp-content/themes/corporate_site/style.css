@@ -152,8 +152,8 @@ body {
 
   #individual_news_01 {
     border-left: none;
-    padding-left:   ;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .y-m-d {
@@ -286,9 +286,7 @@ body {
 
 /* ここからCOMPANY */
 #COMPANY {
-  background-color: yellow;
   width: 1000px;
-  
   height: 750px;
   margin: 0 auto;
   display: flex;
