@@ -19,11 +19,11 @@
                 <div id="wed">    
                     <a href="">WED</a>
                 </div>
-                <div id="nav_to_sections">
-                    <a href="#">NEWS</a>
-                    <a href="<?php echo home_url(); ?>#ABOUT">ABOUT</a>
-                    <a href="<?php echo home_url(); ?>#BUSINESS">BUSINESS</a>
-                    <a href="<?php echo home_url(); ?>#COMPANY">COMPANY</a>
+                <div id="nav_to_sections">                    
+                    <a href="<?php echo esc_url(home_url('/category/news/')); ?>">NEWS</a>
+                    <a href="<?php echo esc_url(home_url()); ?>#ABOUT">ABOUT</a>
+                    <a href="<?php echo esc_url(home_url()); ?>#BUSINESS">BUSINESS</a>
+                    <a href="<?php echo esc_url(home_url()); ?>#COMPANY">COMPANY</a>
                 </div>
                 <div id="nav_to_contact">    
                     <a id="contact" href="">お問い合わせ</a>
