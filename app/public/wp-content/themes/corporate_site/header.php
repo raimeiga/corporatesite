@@ -26,7 +26,7 @@
                     <a href="<?php echo esc_url(home_url()); ?>#COMPANY">COMPANY</a>
                 </div>
                 <div id="nav_to_contact">    
-                    <a id="contact" href="">お問い合わせ</a>
+                    <a id="contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>">お問い合わせ</a>
                 </div>
             </div>     
         </header>

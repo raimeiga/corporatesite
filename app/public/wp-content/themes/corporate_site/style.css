@@ -436,3 +436,26 @@ footer > div {
   /* background-color: chocolate; */
   border-bottom: solid 2px gray; 
 }
+
+
+/* ここから固定ページ */
+#page {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 最初の見出し「Contact」 */
+#page-title {
+  width: 100%;  
+  font-size: 36px;   
+  letter-spacing: 0.25em;
+  color: black;  
+  margin: 80px 0;
+  font-family: Meiryo,Regular; 
+}
+
+/* ここまで固定ページ */
+
+
+
