@@ -471,6 +471,7 @@ footer > div {
 	border:none;
   font-family: Meiryo,Regular;   
 	font-size: 14px;
+  margin-bottom: 17px; 
 }
 
 /* Message */
@@ -488,12 +489,12 @@ textarea {
 	width: 100px;
   height: 43px;
 	display: block;
-	margin: 30px auto 75px auto;
-	border: solid 2px black;	
+	margin: 25px auto 75px auto;
+	border: solid 1px black;	
 }
 /* ここまで固定ページ */
 
-
+/* ここからスマホ使用 */
 @media screen and (max-width: 900px) { 
  
   body {
@@ -543,6 +544,7 @@ header {
   display: none;
 }
 
+/* メインビジュアル */
 #main_visual {
   /* ↓ 画像をトリミングするプロパティ */
   object-fit: cover;
@@ -607,7 +609,6 @@ header {
 
 /* ABOUT */
 #ABOUT {
-
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
@@ -636,7 +637,7 @@ padding: 17px 0 0 0;
   margin: 10px 0;
 }
 
-/* ここからBUSINESS */
+/* BUSINESS */
 #BUSINESS {
   width: 100%;
   height: auto;
@@ -663,19 +664,11 @@ padding: 17px 0 0 0;
 
 #introduction_left {
   width: 100%;
-  margin: 0;
-  /* display: inline-block; */
- /* position: absolute;
- top: 260px;
- left: 210px; */ 
+  margin: 0;  
 }
 
 #introduction_right {
-  width: 100%;
-  /* display: inline-block; */
-  /* position: absolute;
-  top: 160px;
-  right: 210px; */  
+  width: 100%;  
  }
 
 .business_content{
@@ -696,7 +689,7 @@ padding: 17px 0 0 0;
   margin-bottom: 0px;
 }
 
-/* ここからCOMPANY */
+/* COMPANY */
 #COMPANY {
   width: 100%;  
   height: auto;
@@ -716,8 +709,7 @@ padding: 17px 0 0 0;
   position: static;
   background-color: #fff;  
   padding: 30px 2.5%  40px 2.5%;  
-  margin: 0px 16px 0px 16px;
- 
+  margin: 0px 16px 0px 16px; 
 }
 
 #section_title_wrapper_company {
@@ -798,8 +790,7 @@ footer > div {
   margin: 0;  
 }
 
-/* ここからNews & Press */
-
+/* News & Press */
 #News_Press {
   /* background-color: yellow; */
   width: 100%;  
@@ -815,14 +806,11 @@ footer > div {
 #wrapper_child_01 {  
   width: 50%;  
   padding: 45px 0 50px 0;
-
-  /* border: solid black; */
 }
 
 #wrapper_child_02 {  
   width: 100%;
   height: 72px;
-  /* background-color: blue;   */
 }
 
 #span_news {
@@ -847,8 +835,6 @@ footer > div {
 
 #wrapper_child_03 {  
   width: 100%;
-  /* background-color: red; */
-  /* border: solid black; */
 }
 
 .news_article {
@@ -856,7 +842,6 @@ footer > div {
   width: auto;
   text-align: left;  
   padding: 40px 0 35px 0;
-  /* background-color: chocolate; */
   border-bottom: solid 2px gray; 
 }
 #news_article_05 {
@@ -867,8 +852,7 @@ footer > div {
   margin: 0;
 }
 
-
-/* ここから固定ページ */
+/* 固定ページ(Contact) */
 #page {
   width: 100%;
   margin-left: auto;
