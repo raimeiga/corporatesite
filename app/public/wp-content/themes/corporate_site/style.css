@@ -23,55 +23,56 @@ body {
     margin: 0 auto 0 auto; 
 }
 
-
-#header {
-    height: 75px;
+#header {    
     margin: 0;
     background-color: #f0f0f0;
 }
  
- #navi {
-   height: 100px;   
-   position: relative;
+ #navi {    
+   display: flex;
+   justify-content: space-between;
+   height: 75px;
  }
 
-#navi > div > a {    
+ #logo_sections {
+  width: 50%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+ }
+
+
+ #logo_sections  > div > a {  
     text-decoration: none;
 }
 
-#wed {
-    position: absolute;
-    top: 13px;
-    left: 0px;
-    padding-left: 75px; 
+ #wed { 
+    padding-top: 6.5px;
+    padding-left: 6%; 
+    padding-right: 1%;
     font-size: 36px;   
     letter-spacing: 0.25em;    
- }
+ } 
 
  #wed > a {
   color: black;
  }
 
-
- #nav_to_sections {
-    position: absolute;
-    top: 28px;
-    left: 225px;
-    width: 300px;    
+ #nav_to_sections {        
+    width: 33%;    
+    margin: 6%;
     display: flex;
-    justify-content: space-between;
     font-size: 14px;
     font-family: Meiryo,Regular;    
- }
+ } 
 
  #nav_to_sections > a {
   color: black;
+  padding: 13px 30px 13px 1px;   
  }
 
- #nav_to_contact {
-    position: absolute;
-    top: 0;
-    right: 0;
+ #nav_to_contact {    
+    padding: 0;
     background-color: black;
     width: 160px;
     height: 75px;
@@ -210,15 +211,6 @@ body {
   object-fit: cover;
 }
 
-/* #visual_about {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 57%;
-  height: 400px;
-} */
-
-
 #section_title_wrapper_about {
  width: 45%;
  padding:  180px 5% 0 5%; 
@@ -251,10 +243,9 @@ body {
 
 #introduction_wrapper {
  /* background-color: brown; */
- 
  display: flex;
  justify-content: space-between;
- padding: 0 10%;;
+ padding: 0px 10%;
 }
 
 #introduction_left {
@@ -283,9 +274,10 @@ body {
  display: inline;
  color: black;
  font-size: 14px;
+ font-weight: bolder;
 }
 
-.visual_01 {
+.images {
   width: 100%;
   display: block;
   margin-top: 10px;
@@ -310,22 +302,8 @@ body {
    left: 0;    
 }
 
-#visual_company {
- width: 53%;
- position: absolute;
-   top: 118px;
-   right: 0;   
-}
-
-#visual_company > img { 
-  width: 100%;
-  height: 400px;     
-  object-fit: cover;  
-}
-
 #section_title_wrapper_company {
   width: 430px;  
-
 }
 
 #company_description {
@@ -333,6 +311,10 @@ body {
  text-align: left;
  font-size: 14px;
  padding-bottom: 100px;
+}
+
+#company_description_sp {
+  display: none;
 }
 
 .item_first {
@@ -346,6 +328,20 @@ body {
   padding: 0 0 10px 0;  
 }
 
+#visual_company {
+  width: 53%;
+  position: absolute;
+    top: 118px;
+    right: 0;   
+ }
+ 
+ #visual_company > img { 
+   width: 100%;
+   height: 400px;     
+   object-fit: cover;  
+ }
+
+/* footer */
 footer {
   width: 100%;
   background-color: #fff;
@@ -455,7 +451,311 @@ footer > div {
   font-family: Meiryo,Regular; 
 }
 
+
+
+
 /* ここまで固定ページ */
+@media screen and (max-width: 900px) { 
+ 
+  body {
+  width: 100%;
+  }
+
+/* ヘッダー */
+header {
+  width: 100%;  
+  }
+
+#logo_sections {
+  width: 100%;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#wed {
+  margin: 3px 0 -4px 0;
+  padding: 3px 0 0 2%;
+  font-size: 29px;
+}
+
+#wed > a {
+  font-size: 29px;
+  padding: 0;
+  margin: 0;
+}
+
+#nav_to_sections {   
+  padding: 0 0 0 1.5%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: Meiryo,Regular;    
+}  
+
+#nav_to_sections > a {   
+  padding: 0px 30px 0px 1%;  
+  margin: 0;
+}  
+
+#nav_to_contact {
+  display: none;
+}
+
+#main_visual {
+  /* ↓ 画像をトリミングするプロパティ */
+  object-fit: cover;
+  width: 100%;
+  height: 530px;  /* 530pxに縮めたってこと*/
+  margin-bottom: 63px;
+} 
+
+/* #NEWS */
+
+#NEWS {
+  width: 100%;
+  height: 425px;
+  padding: 0 16px;
+  margin: 0 auto 80px auto;    
+}
+
+.section_title {
+ margin: 0 0 -3px 0;
+ padding: 0 0 0 0px;
+ /* margin: 3px 0 -4px 0; */
+}
+
+.section_title_small {
+  display: block;
+  font-size: 14px;
+  font-family: Meiryo,Regular;    
+  font-weight: bolder;
+  color: black;
+  padding: 0;
+  margin-bottom: 60px;   
+}
+
+.section_title_small > p {
+ margin: 0 0 24px 0;
+}
+
+.border {
+  padding-bottom: 24px;
+  border-bottom: solid 2px black;  
+}
+
+#news_container {  
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 108px;
+}
+
+.individual_news {
+  width: 26%;
+  text-align: left;
+  margin: 0 0 20px;  
+  border-left: none;
+  padding: 10px 0;  
+}
+
+#individual_news_01 {
+  border-left: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ABOUT */
+#ABOUT {
+
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 560px;
+  padding: 0 16px;
+  margin-bottom: 77px;
+}
+
+#img {
+width: 100%;
+}
+
+#visual_about {
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+#section_title_wrapper_about {
+width: 100%;
+padding: 17px 0 0 0; 
+}
+
+#description_about {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* ここからBUSINESS */
+#BUSINESS {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+#section_title_wrapper_business {
+  width: 43%;  
+  margin-bottom: 0;
+}
+
+#introduction_wrapper {
+ /* background-color: brown; */
+ height: auto;
+ flex-direction: column;
+ align-items: flex-start;
+ padding: 0 5%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+#introduction_left {
+  width: 100%;
+  margin: 0;
+  /* display: inline-block; */
+ /* position: absolute;
+ top: 260px;
+ left: 210px; */ 
+}
+
+#introduction_right {
+  width: 100%;
+  /* display: inline-block; */
+  /* position: absolute;
+  top: 160px;
+  right: 210px; */  
+ }
+
+.business_content{
+  width: 100%;
+  margin-bottom: none;
+}
+
+.business_content > p {
+ display: inline;
+ color: black;
+ font-size: 14px;
+ font-weight: bolder;
+}
+
+.images {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* ここからCOMPANY */
+#COMPANY {
+  width: 100%;  
+  height: auto;
+  margin: 0 0 0 0px;  
+  flex-direction: column;
+  /* ↓ position: static;はPC画面の設定
+  　　 のposition:relativeを解除する役割 */
+  position: static;
+  padding: 0 16px;
+  }
+
+#COMPANY-box {
+  width: 95%;
+  height: auto;
+  /* ↓ position: static;はPC画面の設定
+  　 のposition:absoluteを解除する役割 */
+  position: static;
+  background-color: #fff;  
+  padding: 30px 2.5%  40px 2.5%;  
+  margin: 0px 16px 0px 16px;
+ 
+}
+
+#section_title_wrapper_company {
+  width: 430px;  
+}
+
+#company_description {
+ display: none;
+}
+
+#company_description_sp {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;  
+ }
+
+.item_first {
+  width: 100%;
+  font-weight: normal;
+  padding: 0;  
+  margin: 20px 0 0 0;
+}
+
+.item_second {
+  width: 85%; 
+  padding: 0 0 0 1.5%;  
+  margin: 5px 0 0 0;
+}
+
+#visual_company {
+  width: 100%;  
+  /* ↓ position: static;はPC画面の設定
+  　　 のposition:absoluteを解除する役割 */
+  position: static;
+  padding: 0;
+  margin: 0;
+ }
+ 
+ #visual_company > img { 
+   width: 100%;
+   height: auto;   
+   padding: 0;
+   margin: 0;
+ }
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 16px;  
+}
+
+footer > div {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0 0 0;  
+}
+
+#footer_logo {
+  width: 9%;
+  padding: 0;
+  margin: 0;
+  position: static;  
+}
+
+#footer_address {
+  font-size: 14px;
+  padding: 0;
+  margin: 10px 0 0 0;
+  position: static;
+}
+
+#copyright {
+  font-size: 10px;
+  font-family: Meiryo,Regular;
+  padding: 40px 0 20px 0;
+  margin: 0;  
+}
 
 
-
+}

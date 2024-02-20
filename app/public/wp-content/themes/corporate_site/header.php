@@ -15,9 +15,10 @@
   <body>
         <!-- ヘッダーここから -->
         <header id="header">
-            <div id="navi">          
+            <div id="navi">      
+              <div id="logo_sections">    
                 <div id="wed">    
-                    <a href="">WED</a>
+                    <a>WED</a>
                 </div>
                 <div id="nav_to_sections">                    
                     <a href="<?php echo esc_url(home_url('/category/news/')); ?>">NEWS</a>
@@ -25,9 +26,10 @@
                     <a href="<?php echo esc_url(home_url()); ?>#BUSINESS">BUSINESS</a>
                     <a href="<?php echo esc_url(home_url()); ?>#COMPANY">COMPANY</a>
                 </div>
-                <div id="nav_to_contact">    
-                    <a id="contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>">お問い合わせ</a>
-                </div>
+              </div>
+              <div id="nav_to_contact">    
+                  <a id="contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>">お問い合わせ</a>
+              </div>              
             </div>     
         </header>
         <!-- ヘッダーここまで -->

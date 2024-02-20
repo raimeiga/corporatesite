@@ -9,7 +9,7 @@
             <div class="section_title_wrapper"  id="section_title_wrapper_news" >
                 <div class="section_title">NEWS</div>
                 <div class="section_title_small">    
-                    <p><span class="border">子ュー</span>ス</p>        
+                    <p><span class="border">ニュー</span>ス</p>        
                 </div>     
             </div>
             <div id="news_container">
@@ -69,12 +69,12 @@
                         <div class="business_content">
                             <p>－</p>
                             <p>Web制作・マーケティング</p>
-                            <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business1.jpg">
+                            <img class="images"  src="<?php echo get_template_directory_uri();?>/images/business1.jpg">
                         </div>
                         <div class="business_content">
                             <p>－</p>
                             <p>インターネットメディア事業</p>
-                            <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business2.jpg">
+                            <img class="images"  src="<?php echo get_template_directory_uri();?>/images/business2.jpg">
                         </div>
                     </div>
 
@@ -82,12 +82,12 @@
                         <div class="business_content">
                             <p>－</p>
                             <p>プロモーション企画・制作</p>
-                            <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business3.jpg">
+                            <img class="images"  src="<?php echo get_template_directory_uri();?>/images/business3.jpg">
                         </div>
                         <div class="business_content">
                             <p>－</p>
                             <p>ソーシャル企画・運営</p>
-                            <img class="visual_01"  src="<?php echo get_template_directory_uri();?>/images/business4.jpg">
+                            <img class="images"  src="<?php echo get_template_directory_uri();?>/images/business4.jpg">
                         </div>
                     </div>
                 </div>
@@ -138,11 +138,28 @@
                             <th class="item_first"></th>
                             <td class="item_second">ソーシャル企画・運営</td>
                         </tr>
-                    </table>            
+                    </table>     
+                    
+                    <div id="company_description_sp">
+                        <p class="item_first">会社名</p>
+                        <p class="item_second">ウェブエンターテイメントデザイン株式会社</p>
+                        <p class="item_first">所在地</p>
+                        <p class="item_second">東京都渋谷区桜丘町99-9 West Building 3F</p>
+                        <p class="item_first">代表</p>
+                        <p class="item_second">ＸＸＸＸＸＸ</p>
+                        <p class="item_first"設立</p>
+                        <p class="item_second">2021年1月1日</p>
+                        <p class="item_first">資本金</p>
+                        <p class="item_second">3,000,000円</p>
+                        <p class="item_first">事業内容</p>
+                        <p class="item_second">Web制作・マーケティング</p>
+                        <p class="item_second">インターネットメディア事業</p>
+                        <p class="item_second">プロモーション企画・制作</p>
+                        <p class="item_second">ソーシャル企画・運営</p>                      
+                    </div>
                 </div>
-
                 <div id="visual_company">
-                <img src="<?php echo get_template_directory_uri();?>/images/company.jpg" alt="向かい合ってすわる女性2人">
+                  <img src="<?php echo get_template_directory_uri();?>/images/company.jpg" alt="向かい合ってすわる女性2人">
                 </div>    
             </section>
     </main>
