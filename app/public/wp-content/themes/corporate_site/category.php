@@ -4,7 +4,7 @@
     <section id="News_Press">
        <div id="wrapper">
           <div id="wrapper_child_01" class="section_title">
-          News_Press
+             News_Press
           </div>
           <div id="wrapper_child_02">
             <span id="span_news">ニュース</span>
@@ -19,7 +19,9 @@
                         <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">PRESS</a>
                     </div>
-                    <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    <div class="news_title">
+                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    </div>
                </div>
 
                <div class="news_article">
@@ -27,7 +29,9 @@
                         <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">PRESS</a>
                     </div>
-                    <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    <div class="news_title">
+                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    </div>
                </div>
 
                <div class="news_article">
@@ -35,7 +39,9 @@
                         <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">PRESS</a>
                     </div>
-                    <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    <div class="news_title">
+                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    </div>
                </div>
 
                <div class="news_article">
@@ -43,23 +49,22 @@
                         <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">PRESS</a>
                     </div>
-                    <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    <div class="news_title">
+                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    </div>
                </div>
 
-               <div class="news_article">
+               <div class="news_article" id="news_article_05">
                     <div class="y-m-d">
                         <time datetime="2021-01-01">2021.01.01</time>
                         <a class="label">PRESS</a>
                     </div>
-                    <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    <div class="news_title">
+                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
+                    </div>
                </div>
                
             </div>
-
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
           </div>
        </div>
     </section>
