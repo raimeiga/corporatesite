@@ -1,3 +1,4 @@
+<!-- デベロッパーツールのコピペを整備してみた -->
 <body class=" customize-support">
         <!-- ヘッダーここから -->
         <header id="header">
