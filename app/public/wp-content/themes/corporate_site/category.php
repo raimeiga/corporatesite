@@ -6,73 +6,84 @@
           <div id="wrapper_child_01" class="section_title">
              News_Press
           </div>
+          
           <div id="wrapper_child_02">
-            <span id="span_news">ニュース</span>
-            <span id="span_press">プレスリリース</span>
+            <a id="span_news" href="/category/news">ニュース</a>
+            <a id="span_press" href="/category/press">プレスリリース</a>
           </div>
 
-          <div id="wrapper_child_03">
-
+          <div id="wrapper_News"> 
             <div>
-               <div class="news_article">
-                    <div class="y-m-d">
-                        <time datetime="2021-01-01">2021.01.01</time>
-                        <a class="label">PRESS</a>
-                    </div>
-                    <div class="news_title">
-                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
-                    </div>
-               </div>
+               <?php
+                    //取得したい投稿記事などの条件を引数として渡す
+                    $args = array(
+                        // 投稿タイプ
+                        'post_type'      => 'post',
+                        // カテゴリー名
+                        'category_name' => 'news',
+                       
+                        // 1ページに表示する投稿数
+                        'posts_per_page' => 5,
+                    );
+                    // データの取得
+                    $posts = get_posts($args);
+                    ?> 
+                    <!-- ループ処理 -->
+                    <?php foreach($posts as $post): ?>
+                    <?php setup_postdata($post); ?>
 
                <div class="news_article">
-                    <div class="y-m-d">
-                        <time datetime="2021-01-01">2021.01.01</time>
-                        <a class="label">PRESS</a>
-                    </div>
-                    <div class="news_title">
-                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
-                    </div>
+                            <div class="y-m-d">
+                                <time datetime="2021-01-01">                                
+                                    <a><?php echo get_the_date(); ?></a>                                    
+                                </time>
+                                <a class="label">news</a>                                
+                            </div>
+                            <a><?php the_title(); ?></a>
+                        </div>
+
+                        <?php endforeach; ?>
+                    <!-- 使用した投稿データをリセット -->
+                    <?php wp_reset_postdata(); ?>                        
                </div>
+          </div>
+
+          <div id="wrapper_Press"> 
+            <div>
+               <?php
+                    //取得したい投稿記事などの条件を引数として渡す
+                    $args = array(
+                        // 投稿タイプ
+                        'post_type'      => 'post',
+                        // カテゴリー名
+                        'category_name' => 'press',
+                       
+                        // 1ページに表示する投稿数
+                        'posts_per_page' => 5,
+                    );
+                    // データの取得
+                    $posts = get_posts($args);
+                    ?> 
+                    <!-- ループ処理 -->
+                    <?php foreach($posts as $post): ?>
+                    <?php setup_postdata($post); ?>
 
                <div class="news_article">
-                    <div class="y-m-d">
-                        <time datetime="2021-01-01">2021.01.01</time>
-                        <a class="label">PRESS</a>
-                    </div>
-                    <div class="news_title">
-                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
-                    </div>
-               </div>
+                            <div class="y-m-d">
+                                <time datetime="2021-01-01">                                
+                                    <a><?php echo get_the_date(); ?></a>                                    
+                                </time>
+                                <a class="label">press</a>                                
+                            </div>
+                            <a><?php the_title(); ?></a>
+                        </div>
 
-               <div class="news_article">
-                    <div class="y-m-d">
-                        <time datetime="2021-01-01">2021.01.01</time>
-                        <a class="label">PRESS</a>
-                    </div>
-                    <div class="news_title">
-                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
-                    </div>
+                        <?php endforeach; ?>
+                    <!-- 使用した投稿データをリセット -->
+                    <?php wp_reset_postdata(); ?>                        
                </div>
-
-               <div class="news_article" id="news_article_05">
-                    <div class="y-m-d">
-                        <time datetime="2021-01-01">2021.01.01</time>
-                        <a class="label">PRESS</a>
-                    </div>
-                    <div class="news_title">
-                      <p>ニュースタイトル1タイトル1タイトル1タイトル1タイトル1</p>
-                    </div>
-               </div>
-               
-            </div>
           </div>
        </div>
     </section>
 </main>
-
-
-
-
-
-
 <?php get_footer(); ?>    <!-- ← footer.phpからヘッダーのコードを呼び出す -->
