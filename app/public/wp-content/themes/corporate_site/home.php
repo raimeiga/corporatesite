@@ -38,7 +38,7 @@
                                     <a><?php echo get_the_date(); ?>
                                     </a>
                                 </time>
-                                <span class="label"><?php echo the_category(); ?></span>                                
+                                <span class="label"><?php echo get_the_category(); ?></span>                                
                             </div>
                             <a><?php the_title(); ?></a>
                         </div>
@@ -158,7 +158,7 @@
                         <p class="item_second">東京都渋谷区桜丘町99-9 West Building 3F</p>
                         <p class="item_first">代表</p>
                         <p class="item_second">ＸＸＸＸＸＸ</p>
-                        <p class="item_first"設立</p>
+                        <p class="item_first">設立</p>
                         <p class="item_second">2021年1月1日</p>
                         <p class="item_first">資本金</p>
                         <p class="item_second">3,000,000円</p>
