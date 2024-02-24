@@ -38,7 +38,7 @@
                                     <a><?php echo get_the_date(); ?>
                                     </a>
                                 </time>
-                                <a class="label">news</a>                                
+                                <span class="label"><?php echo the_category(); ?></span>                                
                             </div>
                             <a><?php the_title(); ?></a>
                         </div>

@@ -165,3 +165,9 @@ Stack trace:
 #2 C:\Users\yusuk\Local Sites\corporatesite\app\public\index.php(17): require('C:\\Users\\yusuk\\...')
 #3 {main}
   thrown in C:\Users\yusuk\Local Sites\corporatesite\app\public\wp-content\themes\corporate_site\home.php on line 39
+[22-Feb-2024 23:57:02 UTC] PHP Warning:  Array to string conversion in C:\Users\yusuk\Local Sites\corporatesite\app\public\wp-content\themes\corporate_site\home.php on line 41
+[22-Feb-2024 23:57:02 UTC] PHP Warning:  Array to string conversion in C:\Users\yusuk\Local Sites\corporatesite\app\public\wp-content\themes\corporate_site\home.php on line 41
+[22-Feb-2024 23:57:02 UTC] PHP Warning:  Array to string conversion in C:\Users\yusuk\Local Sites\corporatesite\app\public\wp-content\themes\corporate_site\home.php on line 41
+[22-Feb-2024 23:59:54 UTC] PHP Warning:  Array to string conversion in C:\Users\yusuk\Local Sites\corporatesite\app\public\wp-content\themes\corporate_site\home.php on line 41
+[22-Feb-2024 23:59:54 UTC] PHP Warning:  Array to string conversion in C:\Users\yusuk\Local Sites\corporatesite\app\public\wp-content\themes\corporate_site\home.php on line 41
+[22-Feb-2024 23:59:54 UTC] PHP Warning:  Array to string conversion in C:\Users\yusuk\Local Sites\corporatesite\app\public\wp-content\themes\corporate_site\home.php on line 41

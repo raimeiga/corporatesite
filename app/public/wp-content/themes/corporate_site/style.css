@@ -167,8 +167,6 @@ body {
     
   }
 
-
-
 .y-m-d  > time > a {
   display:inline-block;  
   margin: 0 22px 18px 0;    
@@ -179,10 +177,10 @@ body {
 
 .label {
     display:inline-block;  
-    padding: 3px 6px;
     background-color: black;
     color: #fff; 
     font-size: 12px;
+    text-decoration: none;
 }
 
 .individual_news > a {
@@ -374,8 +372,51 @@ footer > div {
   padding: 0 0 16px;  
 }
 
-/* ここからNews & Press */
 
+/*-------------------------------------------
+Category一覧
+-------------------------------------------*/
+#category {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+#category .tab-menu {
+  display: flex;
+  border-bottom: solid 1px #000;
+}
+#category .tab-menu .active {
+  border-bottom: solid 3px #000;
+}
+#category .tab-menu li {
+  width: 240px;
+  padding: 20px 0;
+  text-align: center;
+}
+#category .tab-menu li a {
+  font-size: 1rem;
+}
+#category .list dt {
+  margin: 50px 0 10px 0;
+}
+#category .list dt span {
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-left: 10px;
+  text-align: center;
+}
+#category .list dd {
+  padding-bottom: 50px;
+  border-bottom: solid 1px #ccc;
+}
+
+
+/* ここからNews & Press */
+/* 
 #News_Press {
   /* background-color: yellow; */
   width: 1000px;  
@@ -441,7 +482,7 @@ footer > div {
 
 #news_article_05 {
   margin-bottom: 121px;
- }
+ } */
 
 /* ここから固定ページ */
 #page {
