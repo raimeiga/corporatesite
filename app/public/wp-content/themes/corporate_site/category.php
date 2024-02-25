@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
-<main id="category" class="wrapper">
-  <h1 class="page-title">News & Press</h1>
-
-  <ul class="tab-menu">
+<section id="News_Press" class="wrapper">
+   <p class="section_title" >News & Press</p>
+   <ul id="tab-menu">
     <!-- ニュース一覧の場合は、「ニュース」タブの下線を太線にする（activeクラスで設定） -->
     <?php is_category('news') ? print '<li class="active">' : print '<li>' ?>
       <a href="<?php echo esc_url(home_url('/category/news/')); ?>">ニュース</a>
@@ -15,7 +14,7 @@
   </ul>
 
   <?php if (have_posts()): ?>
-    <dl class="list">
+    <div id="list">
       <?php while(have_posts()):the_post(); ?>
         <dt>
           <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
@@ -23,8 +22,8 @@
         </dt>
         <dd><?php the_title() ?></dd>
       <?php endwhile; ?>
-    </dl>
+    </div>
   <?php endif; ?>
-</main>
+</section>
 
 <?php get_footer(); ?>
