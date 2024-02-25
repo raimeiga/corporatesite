@@ -14,9 +14,10 @@
   <body>
         <!-- ヘッダーここから -->
         <header id="header">
-            <div id="navi">          
+            <div id="navi">    
+              <div id="logo_sections">      
                 <div id="wed">    
-                    <a href="">WED</a>
+                    <a>WED</a>
                 </div>
                 <div id="nav_to_sections">
                     <a href="#">NEWS</a>
@@ -24,16 +25,15 @@
                     <a href="index.php#BUSINESS">BUSINESS</a>
                     <a href="index.php#COMPANY">COMPANY</a>
                 </div>
-                <div id="nav_to_contact">    
-                    <a id="contact" href="">お問い合わせ</a>
-                </div>
+              </div>
+              <div id="nav_to_contact">    
+                  <a id="contact" href="">お問い合わせ</a>
+              </div>
             </div>     
         </header>
         <!-- ヘッダーここまで -->
 <!-- header.php ここまで -->
     
-
-
     <main>
         <section id="visual">
             <img id="main_visual"  src="<?php echo get_template_directory_uri();?>/images/mainvisual.jpg" alt="オフィス全体">
