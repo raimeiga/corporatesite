@@ -21,7 +21,7 @@
                     <a>WED</a>
                 </div>
                 <div id="nav_to_sections">                    
-                    <a href="<?php echo esc_url(home_url('/category//')); ?>">NEWS</a>
+                    <a href="<?php echo esc_url(home_url('/category/news/')); ?>">NEWS</a>
                     <a href="<?php echo esc_url(home_url()); ?>#ABOUT">ABOUT</a>
                     <a href="<?php echo esc_url(home_url()); ?>#BUSINESS">BUSINESS</a>
                     <a href="<?php echo esc_url(home_url()); ?>#COMPANY">COMPANY</a>
