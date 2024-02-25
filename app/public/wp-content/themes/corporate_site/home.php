@@ -7,7 +7,8 @@
 
         <section id="NEWS">    
             <div class="section_title_wrapper"  id="section_title_wrapper_news" >
-                <div class="section_title">NEWS</div>
+            <!-- index.phpと見分けるために★↓をつけておく     -->
+            <div class="section_title">NEWS★</div>
                 <div class="section_title_small">    
                     <p><span class="border">ニュー</span>ス</p>        
                 </div>     
@@ -18,10 +19,7 @@
                     //取得したい投稿記事などの条件を引数として渡す
                     $args = array(
                         // 投稿タイプ
-                        'post_type'      => 'post',
-                        // カテゴリー名
-                        'category_name' => 'news',
-                       
+                        'post_type'      => 'post',                                                                     
                         // 1ページに表示する投稿数
                         'posts_per_page' => 3,
                     );
@@ -30,24 +28,22 @@
                     ?> 
                     <!-- ループ処理 -->
                     <?php foreach($posts as $post): ?>
-                    <?php setup_postdata($post); ?>
-                    
+                    <?php setup_postdata($post); ?>                   
                         <div class="individual_news" id="individual_news_01">                    
                             <div class="y-m-d">
                                 <time datetime="2021-01-01">
                                     <a><?php echo get_the_date(); ?>
                                     </a>
                                 </time>
-                                <span class="label"><?php echo get_the_category(); ?></span>                                
+                                <span class="label"><?php the_category(); ?></span>
+                                                        
                             </div>
                             <a><?php the_title(); ?></a>
                         </div>
                         <?php endforeach; ?>
                     <!-- 使用した投稿データをリセット -->
                     <?php wp_reset_postdata(); ?>
-
-             </div>
-               
+             </div>               
         </section>
 
         <section id="ABOUT">
@@ -57,7 +53,7 @@
             <div class="section_title_wrapper" id="section_title_wrapper_about">
                 <div class="section_title">ABOUT</div>
                 <div class="section_title_small">    
-                    <p><span class="border">俺たち</span>について</p> 
+                    <p><span class="border">私たち</span>について</p> 
                 </div>
                 <div id="description_about">
                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -71,7 +67,7 @@
                 <div class="section_title_wrapper" id="section_title_wrapper_business">
                     <div class="section_title">BUSINESS</div>
                     <div class="section_title_small">    
-                        <p><span class="border">詐欺内</span>容</p>        
+                        <p><span class="border">事業内</span>容</p>        
                     </div> 
                 </div>    
                 
@@ -109,7 +105,7 @@
                     <div class="section_title_wrapper" id="section_title_wrapper_company">
                         <div class="section_title">COMPANY</div>
                         <div class="section_title_small">    
-                            <p><span class="border">家庭情</span>報</p>        
+                            <p><span class="border">会社情</span>報</p>        
                         </div> 
                     </div>           
                     <table id="company_description">
