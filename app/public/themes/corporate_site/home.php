@@ -8,7 +8,7 @@
         <section id="NEWS">    
             <div class="section_title_wrapper"  id="section_title_wrapper_news" >
             <!-- index.phpと見分けるために★↓をつけておく     -->
-            <div class="section_title">NEWS★</div>
+            <div class="section_title">NEWS</div>
                 <div class="section_title_small">    
                     <p><span class="border">ニュー</span>ス</p>        
                 </div>     
